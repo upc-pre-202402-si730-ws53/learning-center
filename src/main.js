@@ -31,6 +31,7 @@ import Textarea from "primevue/textarea";
 import Toolbar from "primevue/toolbar";
 import Toast from "primevue/toast";
 import i18n from "./i18n.js";
+import router from "./router/index.js";
 
 
 const app = createApp(App);
@@ -65,6 +66,8 @@ app.component('pv-button', Button)
     .component('pv-toast', Toast);
 
 app.use(i18n);
+
+app.use(router);
 
 app.mount('#app');
 

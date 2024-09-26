@@ -1,4 +1,9 @@
 {
   "tutorials": [],
-  "categories": []
+  "categories": [
+    {
+      "id": 1,
+      "name": "Category 1"
+    }
+  ]
 }

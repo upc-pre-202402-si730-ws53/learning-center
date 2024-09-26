@@ -1,6 +1,6 @@
 import {createApp} from 'vue'
 import './style.css'
-import App from './App.vue'
+import App from './app.vue'
 import PrimeVue from 'primevue/config';
 import Aura from '@primevue/themes/aura';
 import 'primeflex/primeflex.css';
@@ -37,7 +37,7 @@ import SelectButton from "primevue/selectbutton";
 
 const app = createApp(App);
 
-app.use(PrimeVue, {ripple: true, theme: 'aura'});
+app.use(PrimeVue, {ripple: true, theme: { preset: Aura } });
 
 app.use(ConfirmationService)
     .use(DialogService)

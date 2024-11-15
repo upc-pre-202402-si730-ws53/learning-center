@@ -35,6 +35,7 @@ export const useAuthenticationStore = defineStore({
         /**
          * Returns the current username
          * @returns {string} current username
+         */
         currentUsername: (state) => state['username'],
         /**
          * Returns the current token

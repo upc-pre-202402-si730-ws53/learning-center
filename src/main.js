@@ -33,6 +33,7 @@ import Toast from "primevue/toast";
 import i18n from "./i18n.js";
 import router from "./router/index.js";
 import SelectButton from "primevue/selectbutton";
+import {createPinia} from "pinia";
 
 
 const app = createApp(App);
@@ -70,6 +71,10 @@ app.component('pv-button', Button)
 app.use(i18n);
 
 app.use(router);
+
+// Pinia
+const pinia = createPinia();
+app.use(pinia);
 
 app.mount('#app');
 

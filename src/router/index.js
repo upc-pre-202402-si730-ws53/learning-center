@@ -4,6 +4,7 @@ import AboutComponent from "../public/pages/about.component.vue";
 import CategoryManagementComponent from "../publishing/pages/category-management.component.vue";
 import SignInComponent from "../iam/pages/sign-in.component.vue";
 import SignUpComponent from "../iam/pages/sign-up.component.vue";
+import {authenticationGuard} from "../iam/services/authentication.guard.js";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -22,6 +23,7 @@ router.beforeEach((to,
                    next) => {
    let baseTitle = 'ACME Learning Center';
    document.title = `${baseTitle} | ${to.meta['title']}`;
-   next();
+   // Call the authentication guard
+    authenticationGuard(to, from, next);
 });
 export default router;

@@ -4,7 +4,6 @@ import {SignInRequest} from "../model/sign-in.request.js";
 
 export default {
   name: "sign-in",
-  components: {PvButton, PvFloatLabel, PvInputText},
   data() {
     return {
       username: '',

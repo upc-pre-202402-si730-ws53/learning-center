@@ -4,7 +4,6 @@ import {SignUpRequest} from "../model/sign-up.request.js";
 
 export default {
   name: "sign-up",
-  components: {PvInputText, PvFloatLabel, PvButton},
   data() {
     return {
       authenticationStore: useAuthenticationStore(),
